@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mVUoLWJAteS2AldRh1R14QqMmKTzVg3EdNJnzSUHAnmcsMYNIcZ6xrTeWDcIM18I76HkigcUJeUz+FqCj2n/wQ==",
+  "dgSpecHash": "IHfH+TjEbd6EhZiZn2nv5a1W3dN9IckLLpKUdASvvVfaDaTRFYUbTEtCnMQ1L/QT0aw4afdQyeu4i0M9P+cWQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\giuli\\Documents\\Facultad\\Taller2\\tpnro1-Chicabytes\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\giuli\\.nuget\\packages\\nlog\\4.7.4\\nlog.4.7.4.nupkg.sha512"
+  ],
   "logs": []
 }

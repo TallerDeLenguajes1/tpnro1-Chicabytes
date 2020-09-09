@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +16,16 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int cantidad = Convert.ToInt32(comboBox1.SelectedValue);
         }
     }
 }

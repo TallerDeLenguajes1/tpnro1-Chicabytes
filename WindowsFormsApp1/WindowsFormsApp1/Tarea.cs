@@ -15,5 +15,6 @@ namespace WindowsFormsApp1
         public int Duracion { get => Duracion; set => Duracion = value; }
 
 
+
     }
 }

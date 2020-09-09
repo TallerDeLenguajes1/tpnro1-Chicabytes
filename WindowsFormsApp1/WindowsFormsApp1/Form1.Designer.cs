@@ -42,12 +42,15 @@
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 9);
+            this.label1.Location = new System.Drawing.Point(12, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 15);
             this.label1.TabIndex = 0;
@@ -55,7 +58,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 27);
+            this.textBox1.Location = new System.Drawing.Point(163, 82);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 23);
             this.textBox1.TabIndex = 1;
@@ -63,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 82);
+            this.label2.Location = new System.Drawing.Point(12, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 15);
             this.label2.TabIndex = 3;
@@ -73,7 +76,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 100);
+            this.listBox1.Location = new System.Drawing.Point(12, 152);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(136, 124);
             this.listBox1.TabIndex = 4;
@@ -81,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 100);
+            this.label3.Location = new System.Drawing.Point(163, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 15);
             this.label3.TabIndex = 6;
@@ -89,7 +92,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(163, 118);
+            this.button1.Location = new System.Drawing.Point(163, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(54, 23);
             this.button1.TabIndex = 7;
@@ -98,7 +101,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(223, 118);
+            this.button2.Location = new System.Drawing.Point(228, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(54, 23);
             this.button2.TabIndex = 7;
@@ -109,7 +112,7 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(12, 245);
+            this.listBox2.Location = new System.Drawing.Point(12, 297);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(136, 124);
             this.listBox2.TabIndex = 8;
@@ -117,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(79, 30);
+            this.label4.Location = new System.Drawing.Point(57, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 15);
             this.label4.TabIndex = 9;
@@ -126,15 +129,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 59);
+            this.label5.Location = new System.Drawing.Point(57, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Duracion";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 56);
+            this.textBox2.Location = new System.Drawing.Point(163, 111);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 23);
             this.textBox2.TabIndex = 1;
@@ -143,7 +147,7 @@
             // 
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 15;
-            this.listBox3.Location = new System.Drawing.Point(163, 245);
+            this.listBox3.Location = new System.Drawing.Point(163, 297);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(136, 124);
             this.listBox3.TabIndex = 8;
@@ -151,7 +155,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 227);
+            this.label6.Location = new System.Drawing.Point(12, 279);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 15);
             this.label6.TabIndex = 6;
@@ -160,17 +164,59 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(163, 227);
+            this.label7.Location = new System.Drawing.Point(163, 279);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 15);
             this.label7.TabIndex = 6;
             this.label7.Text = "Tareas Realizadas";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(1, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(156, 15);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Ingrese la cantidad de tareas";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox1.Location = new System.Drawing.Point(163, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(136, 23);
+            this.comboBox1.TabIndex = 10;
+            this.comboBox1.Text = "1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(141, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "TAREAS";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 387);
+            this.ClientSize = new System.Drawing.Size(311, 433);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -208,6 +254,9 @@
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label9;
     }
 }
 

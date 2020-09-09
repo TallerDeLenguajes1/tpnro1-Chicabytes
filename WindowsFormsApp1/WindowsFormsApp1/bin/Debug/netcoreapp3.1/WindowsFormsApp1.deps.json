@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "WindowsFormsApp1/1.0.0": {
+        "dependencies": {
+          "NLog": "4.7.4"
+        },
+        "runtime": {
+          "WindowsFormsApp1.dll": {}
+        }
+      },
       "NLog/4.7.4": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
@@ -17,6 +25,11 @@
     }
   },
   "libraries": {
+    "WindowsFormsApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "NLog/4.7.4": {
       "type": "package",
       "serviceable": true,
